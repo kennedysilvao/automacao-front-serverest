@@ -11,8 +11,8 @@
 * RequestsLibrary
 
 #### Tests Suite
-1. Signup
-1.2 Should be successfuly registered
+1. Signup <br>
+1.2 Should be successfuly registered <br>
 1.3 Should be all fields required
 
 
