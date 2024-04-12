@@ -12,8 +12,8 @@
 
 #### Tests Suite
 1. Signup
-        - Should be successfuly registered
-        - Should be all fields required
+1.2 Should be successfuly registered
+1.3 Should be all fields required
 
 
 
