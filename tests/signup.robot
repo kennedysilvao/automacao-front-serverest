@@ -18,6 +18,7 @@ Should be successfuly registered
     ...    password=pwd123
     ...    administrador=true
     
+    Create a new session
     Delete user    ${user}[email]
     
     Is Login Page    Login
