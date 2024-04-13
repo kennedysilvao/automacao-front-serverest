@@ -24,9 +24,7 @@
 
 4. UserSignup <br>
    - Should be successfuly registered by administrator <br>
-   - All fields must be required in signup user by administrator
+   - All fields must be required in signup user by administrator <br>
 
-
-
-
-
+5. Products <br>
+   - Product should be registered   <br>

@@ -63,3 +63,41 @@ Exists user
     IF    ${response.json()}[quantidade] != 0
         Delete user    ${email}   
     END
+
+Product Management
+    [Arguments]    ${nome}    ${account}
+
+    ${response}    GET On Session    url=${API}/produtos    alias=serverest
+    ...    params=nome=${nome}
+    
+    Should Be Equal As Strings    ${response.status_code}    200
+    FOR    ${product}    IN    @{response.json()['produtos']}
+        ${product_id}    Set Variable    ${product['_id']}
+        Set Suite Variable    ${product_id}
+    END
+
+    IF    ${response.json()}[quantidade] != 0
+        Delete product
+    END
+
+Delete product
+    ${HEADER}=    Create Dictionary    Authorization=${token}
+
+    ${response}    DELETE On Session    url=${API}/produtos/${product_id}    alias=serverest    headers=${HEADER}
+    Should Be Equal As Strings    ${response.status_code}    200
+
+Create product
+    [Arguments]    ${product}
+
+    ${response}    POST On Session    url=${API}/product    alias=serverest    json=${product}
+    Should Be Equal As Strings    ${response.status_code}    201
+
+API Login
+    [Arguments]    ${account}
+
+    ${response}    POST On Session    url=${API}/login    alias=serverest    json=${account}
+    Should Be Equal As Strings    ${response.status_code}    200
+
+    ${token}    Set Variable    ${response.json()['authorization']}
+    Set Suite Variable    ${token}
+

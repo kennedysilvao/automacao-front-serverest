@@ -9,6 +9,8 @@ Resource    pages/Signup.resource
 Resource    pages/Home.resource
 Resource    pages/UserSignup.resource
 Resource    pages/UserList.resource
+Resource    pages/ProductForm.resource
+Resource    pages/ProductList.resource
 Resource    ./components/BoxNotice.resource
 Resource    ./components/Logout.resource
 

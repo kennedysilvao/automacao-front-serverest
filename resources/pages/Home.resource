@@ -14,3 +14,6 @@ User logged in
     Get Text    css=h1 >> text=Bem Vindo ${user}
     ...    equal
     ...    Bem Vindo ${user}
+
+Navigate to product form
+    Click    css=a[data-testid="cadastrarProdutos"]
