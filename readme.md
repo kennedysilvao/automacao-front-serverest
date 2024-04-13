@@ -15,6 +15,9 @@
    - Should be successfuly registered <br>
    - Should be all fields required
 
+2. Login <br>
+   - Should be successfuly login
+
 
 
 
