@@ -21,14 +21,3 @@ User should be registered
     Get Text    css=.alert-link >> text=Cadastro realizado com sucesso
     ...    equal
     ...    Cadastro realizado com sucesso
-
-Notice should be
-    [Arguments]    ${expected_text}
-
-    Wait For Elements State    css=.alert-secondary span >> text=${expected_text}
-    ...    visible
-    ...    10
-
-    Get Text    css=.alert-secondary span >> text=${expected_text}
-    ...    equal
-    ...    ${expected_text}    

@@ -23,3 +23,11 @@ Navigate to signup form
     Wait For Elements State    css=h2 >> text=Cadastro
     ...    visible
     ...    5
+
+Submit login form
+    [Arguments]    ${user}
+
+    Fill Text    css=input[name="email"]        ${user}[email]
+    Fill Text    css=input[name="password"]     ${user}[password]
+
+    Click    css=button[type=submit] >> text=Entrar

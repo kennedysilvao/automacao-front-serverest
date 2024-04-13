@@ -5,10 +5,12 @@ Library    Browser
 
 *** Keywords ***
 User logged in
-    Wait For Elements State    css=h1 >> text=Bem Vindo Maryana Rocha
+    [Arguments]    ${user}
+
+    Wait For Elements State    css=h1 >> text=Bem Vindo ${user}
     ...    visible
     ...    10
 
-    Get Text    css=h1 >> text=Bem Vindo Maryana Rocha
+    Get Text    css=h1 >> text=Bem Vindo ${user}
     ...    equal
-    ...    Bem Vindo Maryana Rocha
+    ...    Bem Vindo ${user}

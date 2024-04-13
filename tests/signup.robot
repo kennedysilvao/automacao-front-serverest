@@ -2,7 +2,6 @@
 Documentation    Test Suite of signup
 
 Resource    ../resources/Base.resource
-Resource    ../resources/pages/Signup.resource
 
 Test Setup        Start Browser
 Test Teardown     End Browser
@@ -19,14 +18,14 @@ Should be successfuly registered
     ...    administrador=true
     
     Create a new session
-    Delete user    ${user}[email]
+    Exists user    ${user}[email]    ${user}
     
     Is Login Page    Login
     Navigate to signup form
     Fill signup form    ${user}
     Submit signup form
     User should be registered
-    User logged in
+    User logged in    ${user}[nome]
 
 Should be all fields required
     [Documentation]    All fields required
