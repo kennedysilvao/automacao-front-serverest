@@ -10,6 +10,8 @@ Test Teardown     End Browser
 
 *** Test Cases ***
 Should be deleted user by admin successfuly
+    [Documentation]    User deleted by administrator
+    
     ${account}    Create Dictionary
     ...    nome=Maria da Silva
     ...    email=maria@admin.com

@@ -9,7 +9,8 @@ Test Teardown    End Browser
 
 *** Test Cases ***
 Should be successfuly registered by administrator
-    
+    [Documentation]    User registered by administrator
+
     ${account}    Create Dictionary
     ...    nome=Cleber de Oliveira
     ...    email=cleber@admin.com
@@ -35,6 +36,7 @@ Should be successfuly registered by administrator
     User should be visible in the list of users    ${register}[email]
 
 All fields must be required in signup user by administrator
+    [Documentation]    Required Fields
     [Template]    Attempt user signup by administrator
 
     ${EMPTY}      joao@qa.com     pwd123        Nome é obrigatório

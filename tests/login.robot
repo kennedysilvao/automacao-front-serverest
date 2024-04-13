@@ -8,6 +8,7 @@ Test Teardown    End Browser
 
 *** Test Cases ***
 Should be successfuly login
+    [Documentation]    Login with success
     
     ${account}    Create Dictionary
     ...    nome=Kevin Silva
@@ -22,6 +23,8 @@ Should be successfuly login
     User logged in    ${account}[nome]
 
 Attempt login invalid
+    [Documentation]    Login with incorrects data
+
     [Template]    Login with verify notice
 
     kennedy@404.com         pwd123          Email e/ou senha inválidos

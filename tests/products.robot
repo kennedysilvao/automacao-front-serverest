@@ -8,6 +8,8 @@ Test Teardown     End Browser
 
 *** Test Cases ***
 Product should be registered
+    [Documentation]    Product registered with success
+
     ${account}    Create Dictionary
     ...    nome=Kelvin Paz
     ...    email=kelvin@admin.com
