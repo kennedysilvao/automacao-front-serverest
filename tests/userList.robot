@@ -9,8 +9,7 @@ Test Setup        Start Browser
 Test Teardown     End Browser
 
 *** Test Cases ***
-Should be edit by admin successfuly
-    
+Should be deleted user by admin successfuly
     ${account}    Create Dictionary
     ...    nome=Maria da Silva
     ...    email=maria@admin.com

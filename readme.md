@@ -16,7 +16,15 @@
    - Should be all fields required
 
 2. Login <br>
-   - Should be successfuly login
+   - Should be successfuly login <br>
+   - Attempt login invalid
+
+3. UserList <br>
+   - Should be deleted user by admin successfuly <br>
+
+4. UserSignup <br>
+   - Should be successfuly registered by administrator <br>
+   - All fields must be required in signup user by administrator
 
 
 
