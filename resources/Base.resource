@@ -7,7 +7,10 @@ Resource    helpers/Helpers.resource
 Resource    pages/Login.resource
 Resource    pages/Signup.resource
 Resource    pages/Home.resource
+Resource    pages/UserSignup.resource
+Resource    pages/UserList.resource
 Resource    ./components/BoxNotice.resource
+Resource    ./components/Logout.resource
 
 *** Variables ***
 ${URL}    https://front.serverest.dev
