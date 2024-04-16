@@ -28,3 +28,4 @@
 
 5. Products <br>
    - Product should be registered   <br>
+   - Product should be deleted
