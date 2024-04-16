@@ -17,3 +17,6 @@ User logged in
 
 Navigate to product form
     Click    css=a[data-testid="cadastrarProdutos"]
+
+Navigate to product list
+    Click    css=a[data-testid="listarProdutos"]

@@ -89,7 +89,9 @@ Delete product
 Create product
     [Arguments]    ${product}
 
-    ${response}    POST On Session    url=${API}/product    alias=serverest    json=${product}
+    ${HEADER}=    Create Dictionary    Authorization=${token}
+
+    ${response}    POST On Session    url=${API}/produtos    alias=serverest    json=${product}    headers=${HEADER}
     Should Be Equal As Strings    ${response.status_code}    201
 
 API Login
